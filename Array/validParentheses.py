@@ -10,10 +10,6 @@ def isValid(s: str)-> bool:
     for i in s:
         if i in parenDict.values():
             stack.append(i)
-        elif len(stack) == 0:
-            return False
-        elif stack[-1] == parenDict[i]:
-            stack.pop()
-        else:
+        elif len(stack) == 0 or stack.pop() == parenDict[i]:
             return False
     return len(stack) == 0
