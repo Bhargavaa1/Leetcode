@@ -5,7 +5,7 @@ from collections import Counter
 # typically using all the original letters exactly once.
 
 # Runtime: O(n) Space: O(1)
-# Custom Character Counter 
+# Custom Character Counter Solution 
 def isAnagram1(s:str, t:str) -> bool:
     sCharCount = {}
     for chr in s:
@@ -24,11 +24,11 @@ def isAnagram1(s:str, t:str) -> bool:
     return True
 
 # Runtime: O(n log n) Space: O(n)
-# Sorting
+# Sorting Solution
 def isAnagram2(s: str, t: str) -> bool:
     return sorted(s) == sorted(t)
 
 # Runtime: O(n) Space: O(1)
-# Python's Character Counter
+# Python's Character Counter Solution
 def isAnagram3(s: str, t: str) -> bool:
     return Counter(s) == Counter(t)

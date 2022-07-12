@@ -4,6 +4,9 @@ from typing import *
 # An input string is valid if:
 #     Open brackets must be closed by the same type of brackets.
 #     Open brackets must be closed in the correct order.
+
+# Runtime: O(N) Space: O(N)
+# Stack Of Open Characters Solution
 def isValid(s: str)-> bool:
     stack = []
     parenDict = {')':'(', '}':'{', ']':'['}
