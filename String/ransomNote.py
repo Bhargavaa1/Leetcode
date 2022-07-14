@@ -2,7 +2,9 @@
 # Given two strings ransomNote and magazine, 
 # return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
 # Each letter in magazine can only be used once in ransomNote.
+
 # Runtime: O(N) Space: O(1)
+# Character Counting Hash Map Solution
 def canConstruct(self, ransomNote: str, magazine: str) -> bool:
     ransomNoteCharCounter, magazineCharCounter = {},{}
     for i in ransomNote:
