@@ -3,8 +3,8 @@
 # You may assume that each input would have exactly one solution, and you may not use the same element twice.
 # You can return the answer in any order.
 
-# Hash Map Solution
 # Runtime: O(N) Space: O(N)
+# Hash Map Solution
 def twoSum(nums: List[int], target: int) -> List[int]:
     numsDict = {}
     for i in range(len(nums)):
