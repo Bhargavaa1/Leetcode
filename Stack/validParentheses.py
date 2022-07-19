@@ -7,9 +7,11 @@ from typing import *
 
 # Runtime: O(N) Space: O(N)
 # Stack Of Open Characters Solution
-def isValid(s: str)-> bool:
+
+
+def isValid(s: str) -> bool:
     stack = []
-    parenDict = {')':'(', '}':'{', ']':'['}
+    parenDict = {')': '(', '}': '{', ']': '['}
     for i in s:
         if i in parenDict.values():
             stack.append(i)

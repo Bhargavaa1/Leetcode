@@ -2,6 +2,8 @@ from typing import *
 # 14. Longest Common Prefix
 # Write a function to find the longest common prefix string amongst an array of strings.
 # If there is no common prefix, return an empty string "".
+
+
 def longestCommonPrefix(strs: List[str]) -> str:
     prefix = ""
     if len(strs) == 0:
@@ -15,4 +17,3 @@ def longestCommonPrefix(strs: List[str]) -> str:
             else:
                 return prefix
     return prefix
-

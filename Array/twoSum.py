@@ -12,4 +12,3 @@ def twoSum(nums: List[int], target: int) -> List[int]:
             return [i, numsDict[target-nums[i]]]
         else:
             numsDict[nums[i]] = i
- 

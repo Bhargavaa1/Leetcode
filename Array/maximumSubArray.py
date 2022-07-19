@@ -5,10 +5,12 @@ from typing import *
 
 # Runtime: O(N) Space: O(1)
 # Kadane's Algorithm
+
+
 def maxSubArray(nums: List[int]) -> int:
     globalMax = nums[0]
     localMax = 0
     for num in nums:
-        localMax = max(localMax+num,num)
+        localMax = max(localMax+num, num)
         globalMax = max(globalMax, localMax)
     return globalMax
