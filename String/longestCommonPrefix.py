@@ -4,6 +4,8 @@ from typing import *
 # If there is no common prefix, return an empty string "".
 def longestCommonPrefix(strs: List[str]) -> str:
     prefix = ""
+    if len(strs) == 0:
+        return prefix
     sortedStrs = sorted(strs)
     firstWord, lastWord = sortedStrs[0], sortedStrs[-1]
     for i in range(0, len(firstWord)):
