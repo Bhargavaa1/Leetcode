@@ -9,10 +9,11 @@ from typing import *
 
 
 def longestCommonPrefix(strs: List[str]) -> str:
-    prefix = ""
-    firstWord = sortedStrs[0]
+    result = ""
+    firstWord = strs[0]
     for i in range(0, len(firstWord)):
         for s in strs:
             if i >= len(s) or firstWord[i] != s[i]:
-                return prefix
-    return prefix
+                return result
+        result += s[i]
+    return result
