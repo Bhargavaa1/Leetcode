@@ -3,17 +3,16 @@ from typing import *
 # Write a function to find the longest common prefix string amongst an array of strings.
 # If there is no common prefix, return an empty string "".
 
+# Runtime: O(N*M) Space Complexity: O(M) where N is the length of strs
+#  and M is the length of the shortest string in strs
+# Two Pointer Solution
+
 
 def longestCommonPrefix(strs: List[str]) -> str:
     prefix = ""
-    if len(strs) == 0:
-        return prefix
-    sortedStrs = sorted(strs)
-    firstWord, lastWord = sortedStrs[0], sortedStrs[-1]
+    firstWord = sortedStrs[0]
     for i in range(0, len(firstWord)):
-        if i < len(lastWord):
-            if firstWord[i] == lastWord[i]:
-                prefix += firstWord[i]
-            else:
+        for s in strs:
+            if i >= len(s) or firstWord[i] != s[i]:
                 return prefix
     return prefix
