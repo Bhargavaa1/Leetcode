@@ -4,7 +4,7 @@ from typing import *
 # If there is no common prefix, return an empty string "".
 
 # Runtime: O(N*M) Space Complexity: O(M) where N is the length of strs
-#  and M is the length of the shortest string in strs
+# and M is the length of the shortest string in strs
 # Two Pointer Solution
 
 
