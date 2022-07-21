@@ -13,12 +13,31 @@ def fib(n: int) -> int:
     else:
         return fib(n-2)+fib(n-1)
 
-# fibNums = [0]*31
-# def fib(n: int) -> int:
-#     if n <= 1:
-#         return n
-#     elif fibNums[n] != 0:
-#         return fibNums[n]
-#     else:
+
+# Memory: O(n) Space Complexity: O(n)
+# Recursive Solution with Memoization
+
+fibNums = [0]*31
 
 
+def fib(n: int) -> int:
+    if n <= 1:
+        return n
+    elif fibNums[n] != 0:
+        return fibNums[n]
+    else:
+        fibNums[n] = fibNums[n-2]+fibNums[n-1]
+    return fibNums[n]
+
+# Memory: O(n) Space Complexity: O(n)
+# Dynamic Programming
+
+
+fibNums = [0]*31
+
+
+def fib(n: int) -> int:
+    fibNums[1] = 1
+    for i in range(2, 31):
+        fibNums[i] = fibNums[i-1]+fibNums[i-2]
+    return fibNums[i]
