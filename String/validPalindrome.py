@@ -3,7 +3,7 @@
 # Alphanumeric characters include letters and numbers.
 # Given a string s, return true if it is a palindrome, or false otherwise.
 
-# Runtime: O(n) Space: O(1)
+# Runtime: O(N) Space: O(1)
 # Two Pointer Solution
 def isPalindrome1(s: str) -> bool:
     i, j = 0, len(s)-1
@@ -35,7 +35,7 @@ def lower(s: str) -> str:
     else:
         return s
 
-# Runtime: O(n) Space: O(n)
+# Runtime: O(N) Space: O(N)
 # Reverse String Solution
 
 

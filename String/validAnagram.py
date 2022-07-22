@@ -32,7 +32,7 @@ def isAnagram1(s: str, t: str) -> bool:
 def isAnagram2(s: str, t: str) -> bool:
     return sorted(s) == sorted(t)
 
-# Runtime: O(n) Space: O(1)
+# Runtime: O(N) Space: O(1)
 # Python's Character Counter Solution
 
 
